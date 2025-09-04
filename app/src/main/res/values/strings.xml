@@ -1,0 +1,40 @@
+<resources>
+    <!-- Hazard Divisions -->
+    <string-array name="hazard_divisions">
+        <item>1.1</item>
+        <item>1.2</item>
+        <item>1.3</item>
+        <item>1.4</item>
+    </string-array>
+
+    <!-- PES / ES Types -->
+    <string-array name="pes_types">
+        <item>Igloo</item>
+        <item>Bunker</item>
+        <item>Above Ground Magazine</item>
+    </string-array>
+
+    <string-array name="es_types">
+        <item>Igloo</item>
+        <item>Bunker</item>
+        <item>Above Ground Magazine</item>
+        <item>Dwelling / Public Building</item>
+        <item>Traffic Route</item>
+    </string-array>
+
+    <!-- Orientations -->
+    <string-array name="orientations">
+        <item>Front (Traversed)</item>
+        <item>Front (Untraversed)</item>
+        <item>Side</item>
+        <item>Rear</item>
+    </string-array>
+
+    <!-- Traversed / Untraversed -->
+    <string-array name="traverse_options">
+        <item>Traversed</item>
+        <item>Untraversed</item>
+    </string-array>
+    <string name="app_name">QD Safety Calculator</string>
+
+</resources>

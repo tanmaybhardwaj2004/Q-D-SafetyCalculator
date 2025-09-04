@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#0B1222"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inputs"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Hazard Division Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:elevation="6dp"
+                android:clipToOutline="true">
+
+                <TextView
+                    android:text="Hazard Division"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_field">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_warning"/>
+
+                    <Spinner
+                        android:id="@+id/spinner_hazard_division"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="12dp"
+                        android:entries="@array/hazard_divisions"
+                        android:minHeight="48dp"
+                        android:background="@android:color/transparent" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_chevron_down"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- PES Type Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:elevation="6dp"
+                android:clipToOutline="true">
+
+                <TextView
+                    android:text="PES Type"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_field">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_igloo"/>
+
+                    <Spinner
+                        android:id="@+id/spinner_pes_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="12dp"
+                        android:entries="@array/pes_types"
+                        android:minHeight="48dp"
+                        android:background="@android:color/transparent" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_chevron_down"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- PES Orientation Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:elevation="6dp"
+                android:clipToOutline="true">
+
+                <TextView
+                    android:text="PES Orientation / Face"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_field">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_building"/>
+
+                    <Spinner
+                        android:id="@+id/spinner_pes_orientation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="12dp"
+                        android:entries="@array/orientations"
+                        android:minHeight="48dp"
+                        android:background="@android:color/transparent" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_chevron_down"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ES Type Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:elevation="6dp"
+                android:clipToOutline="true">
+
+                <TextView
+                    android:text="Exposed Site (ES) Type"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_field">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_igloo"/>
+
+                    <Spinner
+                        android:id="@+id/spinner_es_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="12dp"
+                        android:entries="@array/es_types"
+                        android:minHeight="48dp"
+                        android:background="@android:color/transparent" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_chevron_down"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ES Orientation Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:elevation="6dp"
+                android:clipToOutline="true">
+
+                <TextView
+                    android:text="ES Orientation / Face"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_field">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_compass"/>
+
+                    <Spinner
+                        android:id="@+id/spinner_es_orientation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="12dp"
+                        android:entries="@array/orientations"
+                        android:minHeight="48dp"
+                        android:background="@android:color/transparent" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_chevron_down"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Traversed / Untraversed Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:elevation="6dp"
+                android:clipToOutline="true">
+
+                <TextView
+                    android:text="Traversed / Untraversed"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_field">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_route"/>
+
+                    <Spinner
+                        android:id="@+id/spinner_traverse"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="12dp"
+                        android:entries="@array/traverse_options"
+                        android:minHeight="48dp"
+                        android:background="@android:color/transparent" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_chevron_down"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- NEQ Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:elevation="6dp"
+                android:clipToOutline="true">
+
+                <TextView
+                    android:text="Net Explosive Quantity (kg)"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_field">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_scale"/>
+
+                    <EditText
+                        android:id="@+id/edittext_neq"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="12dp"
+                        android:hint="Enter NEQ in kg"
+                        android:inputType="numberDecimal"
+                        android:minHeight="48dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white_80" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/checkbox_crater_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apply Igloo crater radius check (SIQD ≥ 0.5 × Q^(1/3))"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <!-- Calculate Button -->
+            <Button
+                android:id="@+id/button_calculate_siqd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculate SIQD"
+                android:background="@drawable/bg_button"
+                android:textColor="@color/black"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
